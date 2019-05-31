@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header-container {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  position: relative;
+}
+
+.nav {
+ visibility: hidden;
+}
+
+#header-background-sec1{
+  width: 30%;
+  height: 40vh;
+  background-color: rgba(169, 169, 169, 0.555);
+}
+
+#header-background-sec2{
+  width: 70%;
+  height: 40vh;
+  background-color: rgba(169, 169, 169, 0.205);
+}
+
+#burger-icon:hover {
+  cursor: pointer;
+}
+
+#hero-image {
+  width: 30%;
+  height: 50%;
+  background-color: rgba(128, 128, 128, 0.404);
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  font-size: 20px;
+  text-align: center;
+  display: table;
+}
+
+#dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 60%;
+  left: 74%;
+  z-index: 1;
+  width: 200px;
+}
+
+#burger-icon {
+  background-image: url(http://www.stickpng.com/assets/images/588a64e7d06f6719692a2d11.png);
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-list {
+  color: black;
+  padding: 12px 16px;
+  margin-bottom: 1px;
+  text-decoration: none;
+  display: block;
+  background-color:rgba(128, 128, 128, 0.678);
+  width: 200px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(128, 128, 128, 0.445);
+}
+
+#dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-div-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+#hero-bio{
+  width: 100%;
+  height: 25vh;
+  background-color: rgba(128, 128, 128, 0.589);
+  text-align: center;
+  display: table;
+  font-size: 30px;
+}
+#headline {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  font-size: 20px;
+  text-align: center;
+  display: table;
+}
+#bigger-screen-bio {
+  display: none;
+}
+
+.text {
+  display: table-cell;
+  vertical-align: middle;
+}
+#project-showcase1 {
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(128, 128, 128, 0.342);
+  text-align: center;
+  display: table;
+  font-size: 30px;
+}
+#project-showcase2 {
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(128, 128, 128, 0.137);
+  text-align: center;
+  display: table;
+  font-size: 27px;
+}
+#footer {
+  display: none;
+}
+
+@media screen and (min-width: 415px ) and (max-width : 1024px) {
+  .header-container {
+  height: 100vh;
+  }
+
+  #header-background-sec1 {
+   height: 100vh;
+  }
+
+  #header-background-sec2 {
+    height: 100vh;
+  }
+
+  #hero-image {
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: 10%;
+  font-size: 30px;
+  }
+
+  #dropdown {
+  top: 5%;
+  left: 80%;
+  z-index: 1;
+  width: 200px;
+  }
+  
+  #headline {
+    font-size: 50px;
+  }
+
+  #bigger-screen-bio {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  }
+
+ .projects-div-container {
+   display: none;
+  }
+
+  #footer {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  margin-bottom: 50px;
+  margin-left: 260px;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  color: black;
+  }
+  .icon-img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+  }
+  .social-icons:hover {
+    cursor: pointer;
+  }
+  #social-accounts {
+    position: relative;
+    width: 120px;
+    font-size: 20px;
+  }
+  #follow-me-text {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width : 1025px) {
+    .header-container {
+    height: 100vh;
+  }
+  #header-background-sec1 {
+    height: 100vh;
+  }
+
+  #header-background-sec2 {
+    height: 100vh;
+  }
+
+  .nav {
+    visibility: visible;
+    margin-top: 35px;
+    padding-left: 600px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    font-size: 23px;
+    padding-right: 20px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .nav a:hover {
+    color: grey;
+  }
+
+  #hero-image {
+    width: 30%;
+    height: 70%;
+    top: 17%;
+    left: 15%;
+    font-size: 30px;
+  }
+
+  #headline {
+    font-size: 60px;
+    top: 30%;
+    left: 50%
+  }
+
+  #dropdown {
+    display: none;
+  }
+
+  #bigger-screen-bio {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+  }
+
+ .projects-div-container {
+   display: none;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    color: black;
+  }
+
+  .icon-img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+  }
+
+  .social-icons:hover {
+    cursor: pointer;
+  }
+
+  #social-accounts {
+    position: relative;
+    width: 120px;
+    font-size: 20px;
+  }
+
+  #follow-me-text {
+    position: absolute;
+    bottom: 0;
+  }
+}
